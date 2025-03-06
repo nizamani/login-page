@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .puzzle-cut {
+            position: relative;
+            background: #43b17e;
+            border-radius: 20px;
+        }
+        .puzzle-cut::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 58px;
+            height: 55px;
+            background: black;
+            border-radius: 0 15px 0 25px;
+        }
+        .inner-puzzle-cut {
+            position: relative;
+            border-radius: 20px;
+            background: white;
+            padding: 16px;
+        }
+        .inner-puzzle-cut::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background: #43b17e;
+            border-radius: 0 20px 0 20px;
+        }
+        .gradient-0 {
+            background: radial-gradient(circle, #14532d 20px, black, black, black);
+        }
+    </style>
+</head>
+<body class="bg-[#275a57] flex md:items-center justify-center min-h-screen p-6 md:p-10">
+    <div class="gradient-0 from-green-900 via-black to-green-900 rounded-2xl shadow-lg flex flex-wrap w-full h-full overflow-hidden justify-between items-center px-8 md:px-16 py-12 relative">
+        <!-- Logo -->
+        <div class="absolute top-6 left-6 w-12 text-white">Logo</div>
+        
+        <!-- Left Section -->
+        <div class="w-full md:w-2/5 p-4 md:p-8 flex flex-col justify-start text-white">
+            <h1 class="text-lg mb-6">Please enter your account details</h1>
+            <div>
+                <label class="block mb-2 text-white">Email</label>
+                <input type="email" class="text-black w-full p-3 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your email">
+            </div>
+            <div class="mt-4">
+                <label class="block mb-2 text-white">Password</label>
+                <input type="password" class="text-black w-full p-3 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your password">
+                <a href="#" class="text-sm hover:underline block text-right mt-2">Forgot Password?</a>
+            </div>
+            <button class="w-full bg-[#43b17e] hover:bg-green-600 text-white font-bold py-3 rounded-xl mt-6">Sign In</button>
+            
+            <div class="flex flex-col align-center space-y-4">
+                <div class="flex justify-center space-x-4 mt-6">
+                        <button class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center"><img src="img/github-mark-white.svg" alt="GitHub"></button>
+                        <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center"><img src="img/google-logo.png" alt="Google"></button>
+                        <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center"><img src="img/facebook-logo.png" alt="Facebook" class="object-cover"></button>
+                </div>
+                <div>
+                    <a href="#" class="text-sm text-white hover:underline block text-right mt-2 text-white">Create an Account</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Section -->
+        <div class="w-full hidden md:block md:w-2/5 p-8 puzzle-cut text-black flex flex-col justify-start rounded-2xl mt-12 text-white">
+            <h1 class="text-3xl md:text-5xl text-white leading-[4rem]">What's Our</h1>
+            <h1 class="text-3xl md:text-5xl text-white leading-[4rem]">Client have said.</h1>
+            <h1 class="text-xl mt-2 text-bold  text-white leading-[5rem]">“</h1>
+            <div class="flex flex-col gap-4">
+                <div class="text-1xl mt-2">Amazing guy to work with.<br>Give him a chance and he will impress you to.</div>
+                <div class="pb-10">
+                    <p class="mt-4 font-semibold text-2xl">Shehzad Nizamani</p>
+                    <p class="text-1xl">Full Stack Developer</p>
+                </div>
+            </div>
+            
+            <div class="flex space-x-4 mt-4">
+                <button class="bg-white bg-opacity-70 hover:bg-opacity-100 w-12 h-10 flex items-center justify-center text-[#43b17e] rounded-lg">
+                    <span class="material-icons" style="font-size:24px;">
+                        arrow_back
+                        </span>
+                </button>
+                <button class="bg-black w-12 h-10 flex items-center justify-center rounded-lg text-white hover:text-[#43b17e]">
+                    <i class="material-icons" style="font-size:24px;">arrow_forward</i>
+                </button>
+            </div>
+            
+            <div class="inner-puzzle-cut mt-6 relative text-black">
+                <div class="absolute -top-[18px] -right-[18px] w-12 h-12 bg-white rounded-full flex items-center justify-center text-black font-bold">✦</div>
+                <div class="flex flex-col content-center gap-8 p-8">
+                    <h2 class="font-bold text-[1.3rem] md:text-2xl">Pixel perfect html designs that are responsive</h2>
+                    <p class="text-base">This is just a sample design to showcase my designing skills to me clients.</p>
+
+                    <!--circles-->
+                    <div class="flex items-center justify-end">
+                        <div class="flex items-center">
+                            <div class="relative flex">
+                                <!-- Profile 1 -->
+                                <img src="img/profile1.jpg" class="w-12 h-12 rounded-full border-2 border-white relative z-50" alt="Profile 1">
+                                
+                                <!-- Profile 2 -->
+                                <img src="img/profile3.jpg" class="object-cover w-12 h-12 rounded-full border-2 border-white -ml-4 relative z-40" alt="Profile 2">
+                                
+                                <!-- Profile 3 -->
+                                <img src="img/profile2.jpg" class="object-cover w-12 h-12 rounded-full border-2 border-white -ml-4 relative z-30" alt="Profile 3">
+                                
+                                <!-- +2 Circle -->
+                                <div class="object-cover w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center text-sm font-semibold text-white -ml-4 relative z-20">
+                                    +2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
